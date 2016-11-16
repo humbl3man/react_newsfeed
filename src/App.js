@@ -37,7 +37,7 @@ class Feed extends Component {
           </div>
           <a className="pullRight smallText muted"
             onClick={this.removeHandleClick} href="">
-            Not Interested
+            <i className="material-icons">not_interested</i>
           </a>
           <h3>{this.props.news.author}</h3>
         </div>
@@ -47,12 +47,12 @@ class Feed extends Component {
         </div>
         <div className="feedFooter cf">
           <ul className="feedControls unstyledList inlineList pullLeft">
-            <li><a className="muted" href="#"><span className="fa fa-share"></span></a></li>
-            <li><a className="muted" href="#"><span className="fa fa-comment"></span></a></li>
-            <li><a className="muted" href="#"><span className="fa fa-heart"></span></a></li>
-            <li><a className="muted" href="#"><span className="fa fa-ellipsis-v"></span></a></li>
+            <li><a className="muted" href="#"><i className="material-icons">face</i></a></li>
+            <li><a className="muted" href="#"><i className="material-icons">repeat</i></a></li>
+            <li><a className="muted" href="#"><i className="material-icons">favorite</i></a></li>
+            <li><a className="muted" href="#"><i className="material-icons">more_vert</i></a></li>
           </ul>
-          <a className="report pullRight" href="#">Report</a>
+          <a className="report pullRight" href="#"><i className="material-icons">report_problem</i></a>
         </div>
       </div>
     );
